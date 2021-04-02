@@ -12,4 +12,5 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(8080, () => console.log("Server running on port 80"));
+const PORT = 80
+server.listen(PORT , () => console.log(`Server running on port ${PORT}`));
